@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario:#000000;
+    --color-secundario:#F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-montserrat: 'Montserrat', sans serif;
+    --fuente-krona: 'Krona One', sans serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+.header{
+    padding: 2% 0% 0% 15% ;
+}
+
+.header__menú{
+    display: flex;
+    gap: 80px;
+}
+
+.header__menú__link{
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+ .presentación{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+} 
+
+.presentación__contenido{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentación__contenido__título{
+    font-size: 2rem;
+    font-family: var(--fuente-krona);
+}
+
+.título-destaque{
+    color: var(--color-terciario);
+}
+
+.presentación__contenido__texto{
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+}
+
+.presentación__enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentación__enlaces__subtítulo{
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentación__enlaces__link{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid var(--color-terciario);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;  
+    color: var(--color-secundario);
+    font-family: var(--fuente-montserrat);
+}
+.presentación__enlaces__link:hover{
+    background-color: var(--color-hover);
+}
+
+.presentación__mi-foto{
+    width: 50%;
+}
+
+.footer{
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+    padding 1.5rem;
+    text-align: right;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px){
+    .header{
+        padding: 10%;
+    }
+ 
+    .header__menú{
+        justify-content: center;
+    }
+ 
+    .presentación{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .presentación__contenido{
+        width: auto;
+    }
+}
