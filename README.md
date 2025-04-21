@@ -10,6 +10,7 @@ Debes crear visualizaciones de datos con la biblioteca Matplotlib.
 Analiza métricas como ingresos, reseñas y rendimiento de ventas.
 
 Debes evaluar información como: ingresos, categorías más vendidas, reseñas de los clientes, productos más vendidos, y costo o valor del envío promedio.
+
 Crea tablas de tuplas con esos datos por tienda
 
 Crea gráficos para visualización: Decide qué tipos de gráficos utilizar para presentar los resultados de forma clara y visual.
